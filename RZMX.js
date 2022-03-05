@@ -1085,3 +1085,28 @@ window.onload = function () {
   else if(window.location.pathname == "/block") {LoadPageOld('block');}
   else if(window.location.pathname == "/kit-free") {LoadPageOld('kit-free');}
 }
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+    return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0) || e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+    return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0) || e.ctrlKey && e.keyCode == 'S'.charCodeAt(0) || e.ctrlKey && e.keyCode == 'D'.charCodeAt(0)){
+    return false;
+  }
+}
+
+function nocopy(event) {
+  var event = event || window.event;
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; }
+  return false;
+}
+document.onmouseup = nocopy;
+document.onmousemove = nocopy;
+document.ondragstart = nocopy;
+document.onselectstart = nocopy;
+document.ontextmenu = nocopy;
+document.oncopy = nocopy;
+document.oncontextmenu = nocopy;
