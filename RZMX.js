@@ -1110,3 +1110,101 @@ document.onselectstart = nocopy;
 document.ontextmenu = nocopy;
 document.oncopy = nocopy;
 document.oncontextmenu = nocopy;
+var CustomerSteamId = "0";
+var OvhPayUrl = "";
+
+function qiwiHandler(e){
+	//e.preventDefault();
+	var inputval = document.getElementById('qiwi-donation-amount').value;
+	var inputfloat = parseFloat(inputval).toFixed(2);
+	if(inputfloat < 20 || inputfloat > 15000 || isNaN(inputfloat)){
+		document.getElementById('qiwi-error-box').innerText = "От 20 до 15000 RUB";
+		e.preventDefault();
+		return false;
+	}else{
+		document.getElementById('qiwi-error-box').innerText = "";
+	}
+	document.getElementById('qiwi-donation-amount').value = inputfloat;
+	if(CustomerSteamId == "0" || CustomerSteamId == ""){
+		document.getElementById('qiwi-error-box').innerText = "Пожалуйста авторизуйтесь в магазине!";
+		e.preventDefault();
+		return false;
+	}
+	qiwiFormHandle();
+	
+	
+	
+	
+	return null;
+}
+
+function qiwiFormHandle(){
+	var qiwi_comment = document.getElementById('qiwi-donation-comment');
+	qiwi_comment.value = CustomerSteamId;
+	document.getElementById('qiwi-donation-account').value = CustomerSteamId;
+	document.getElementById('qiwi-inp-other').setAttribute("href", OvhPayUrl);
+	document.getElementById('qiwi-inp-other2').setAttribute("href", OvhPayUrl);
+	document.getElementById('qiwi-successUrl').value = 'https://'+window.location.hostname;
+}
+
+function OvhUrlOverrite(){
+	var slides = document.getElementsByClassName("nav-link");
+	for (var i = 0; i < slides.length; i++) {
+		var elelink = slides.item(i);
+		var urlelelink = elelink.getAttribute("href");
+	   if(urlelelink.startsWith('https://pay.moscow.ovh')){
+		   OvhPayUrl = urlelelink;
+		   console.log(OvhPayUrl);
+		   elelink.setAttribute("href", "javascript:;");
+		   elelink.setAttribute("onclick", "OpenOplata()");
+	   }
+	}
+}
+
+function obtainShopSteamId(){
+	if(CustomerSteamId != "0" && CustomerSteamId != ""){
+		return;
+	}
+	var xmlHttp = new XMLHttpRequest();
+
+        if(xmlHttp != null)
+        {
+            xmlHttp.open( "GET", "/api/index.php?modules=users&action=getData", true );
+            xmlHttp.send( null );
+        }
+		xmlHttp.onload = function(gjson) {
+			var gjson = JSON.parse(xmlHttp.response);
+          console.log(gjson);
+			var preSteam = gjson.data.steamID;
+			OvhPayUrl = "https://pay.moscow.ovh/?"+gjson.data.pay;
+			if(preSteam > 76561100000000000 || !isNaN(preSteam)){
+				CustomerSteamId = preSteam.toString();
+				//qiwiFormHandle();
+				OvhUrlOverrite();
+			}else{
+				console.log("error obtainShopSteamId! "+ gjson);
+			}
+		}
+
+}
+
+function OpenOplata(){
+	Open('Oplata');
+			qiwiFormHandle();
+	setTimeout(() => function () {
+		try{
+			qiwiFormHandle();
+		}catch(e){
+			console.log('element not found '+ e);
+		}
+	}, 3000);
+}
+
+var DOMReady = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
+window.addEventListener("load",function () {
+	try{
+		obtainShopSteamId();
+	}catch(e){
+		console.log('element not found '+ e);
+	}
+	});
