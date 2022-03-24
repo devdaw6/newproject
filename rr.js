@@ -1,75 +1,11 @@
-document.addEventListener('load', ()=>document.querySelectorAll('.product__price').forEach(elem=>parseInt(elem.innerText) == 0 ? elem.innerText = 'БЕСПЛАТНО' : ''), true);
-document.addEventListener('load', ()=>document.querySelectorAll('.product__price').forEach(elem=>parseInt(elem.innerText) == 0 ? elem.innerText = 'Бесплатно' : ''), true);
-var PageCode = new Array();
-PageCode["rules"] = {
-  title: 'ПРАВИЛА',
-  content: '<div class="xbox_custom_rules"><ul style="list-style-type:disc"> <h4>Информация</h4> <li>Не знание правил не освобождает Вас от ответственности.</li></br><li>Зайдя на сервер Вы     автоматически соглашаетесь со всеми нижеперечисленными пунктами правил.</li></br><li>Вы несете ответственность за все свои аккаунты. Получив бан за нарушение   на одном аккаунте, вы получите его и на последующих. То же самое будет если на одном из ваших аккаунтах имеется EAC блокировка.</li></br><li>Если Вы уже были   замечены с читами / макросами на другом сервере / проекте и на вас есть пруфы - мы имеем право забанить Вас без проверки.</li></br><li>Администрация не         обязуется компенсировать игровые ценности, утраченные по причине вашей ошибки, багов игры или технических проблем на сервере.</li></br><li>Запрещена продажа   или реклама Читов/Макросов.</li></br><li>Запрещено выдавать себя за Администратора, модератора или проверяющего.</li></br><li>Администрация сама выбирает       наказание для игрока в зависимости от степени нарушения и обстоятельств. Игрок может получить просто предупреждение, а может получить и перманентный бан.       </li></br><h4>Геймплей</h4> <li>Запрещено использовать/хранить читы/макросы или любой другой софт дающий преимущество перед честными игроками.</li></br>       <li>Запрещена игра с читерами/макросниками.</li></br><li>Запрещено использование услуг читеров.</li></br><li>Запрещено использование любых видов багов с       целью или без цели получения преимущества над другими игроками.</li> <br> <h4>Нарушение лимита игроков в команде</h4> <li>Нельзя жить больше положенного       максимума в одном доме</li><br><li>Нельзя устраивать альянсы и перемирия с соседями если в сумме вас больше указанного в названии сервера максимума</li><br>   <li>Частая смена тиммейта будет считаться за нарушения правила о лимите</li><br><li>Нельзя рейдить и </li> <br>   <h4>Игровой Чат</h4> <li>Запрещены ссылки в чате на сторонние сервисы и сайты.</li></br><li>Запрещен флуд (многократное повторение бессмысленных фраз,         символов) или многократное отправление одинаковых фраз за короткий промежуток времени.</li></br><li>Запрещены провокационные сообщения, по типу - "я читер,     проверь меня".</li> </br> <h4>Проверки</h4> <li>Вы имеете полное право отказаться проходить проверку, но в этом случае вы и ваши тиммейты получат блокировку   на всех наших серверах.</li></br><li>При согласии на проверку вы разрешаете устанавливать сторонние программы нужные администрации для проверки вашего PC.     </li></br><li>Проверки проходят только через программы «DISCORD» и «SKYPE». Каждый игрок на нашем проекте, в обязательном порядке должен иметь одну из данных   программ на своём пк (или хотя-бы аккаунт в дискорде).</li></br><li>Выход с сервера во время вызова на проверку увенчается блокировкой.</li> </ul></br></br></br></div>'
+var curcontent = new Array();
+curcontent["block"] = {
+  xhead: 'БОНУСЫ', 
+  xcon: '<div class="xbox_custom_rules"><ul style="list-style-type:disc"> <h4>БОНУСЫ</h4> <li>Промокод "devdaw6" - даёт 30₽</li></br><li>Промокод "wipe" - даёт 7% скидки на все</li></br><li> Общая сумма пополнение на 5000₽ добавит вам еще 2000₽!!!</li></br><li>Разовое пополнение на 1000₽ прибавит вам еще 500₽!!!</li></br></ul></br></br></br></div>'
 };
-
-PageCode["help"] = {
-  title: 'КОМАНДЫ',
-  content: '<div class=xbox style="padding:0 20px"><h4>Список команд, связанных с телепортом</h4>\
-  <div class=xbox style="padding:0 20px">\
-  <span class=extra-command>/tpr [ник игрока]</span> - отправить запрос на телепорт к игроку.\
-  <br>\
-  <span class=extra-command>/tpc</span> - отменить запрос на телепорт.\
-  <br>\
-  <span class=extra-command>/tpa</span> - принять запрос на телепорт.\
-  <br>\
-  <span class=extra-command>/sethome [название дома]</span> - создать точку дома.\
-  <br>\
-  <span class=extra-command>/home [название дома]</span> - телепортироваться на точку дома с указанным названием.\
-  <br><br></div>\
-  <h4>Список команд, связанных с друзьями</h4>\
-  <div class=xbox style="padding:0 20px">\
-  <span class=extra-command>/team add [ник игрока]</span> - добавить игрока в группу.\
-  <br>\
-  <span class=extra-command>/team remove</span> - удалить игрока из группы.\
-  <br><br></div>\
-  <h4>Прочие команды</h4>\
-  <div class=xbox style="padding:0 20px">\
-  <span class=extra-command>/kit</span> - меню наборов.\
-  <br>\
-  <span class=extra-command>/remove</span> - режим удаления.\
-  <br>\
-  <span class=extra-command>/up</span> - режим улучшения.\
-  <br>\
-  <span class=extra-command>/trade [ник игрока]</span> - отправить запрос на обмен игроку.\
-  <br>\
-  <span class=extra-command>/menu</span> - меню.\
-  <br>\
-  <span class=extra-command>/store</span> - корзина.\
-  <br>\
-  <span class=extra-command>/block</span> - блокировка предметов после вайпа.\
-  <br>\
-  <span class=extra-command>/tpmenu</span> - меню телепортации.\
-  <br>\
-  <span class=extra-command>/pass</span> - меню заданий.\
-  <br>\
-  <span class=extra-command>/bp</span> - меню крафта рюкзака.\
-  <br>\
-  <span class=extra-command>/online</span> - узнать сколько человек на сервере.\
-  <br><br></div>\
-  <h4>Список биндов, необходимые для удобной игры</h4>\
-  <div class=xbox style="padding:0 20px">\
-  <span class=extra-command>bind k chat.say /kit</span> - меню наборов.\
-  <br>\
-  <span class=extra-command>bind l chat.say /remove</span> - режим удаления.\
-  <br>\
-  <span class=extra-command>bind j chat.say /up</span> - режим улучшения.\
-  <br>\
-  <span class=extra-command>bind p chat.say /tpmenu</span> - меню телепортации.\
-  <br><br>Не обязательно указывать те кнопки, что приведены в списке выше.\nНа каждую команду можете назначить любую удобную для Вас кнопку.\
-  </div></div>'
-};
-
-PageCode["block"] = {
-  title: 'БОНУСЫ', 
-  content: '<div class="xbox_custom_rules"><ul style="list-style-type:disc"> <h4>БОНУСЫ</h4> <li>Промокод "devdaw6" - даёт 30₽</li></br><li>Промокод "wipe" - даёт 7% скидки на все</li></br><li> Общая сумма пополнение на 5000₽ добавит вам еще 2000₽!!!</li></br><li>Разовое пополнение на 1000₽ прибавит вам еще 500₽!!!</li></br></ul></br></br></br></div>'
-};
-PageCode["kit-free"] = {
-  title: 'СТАРТОВЫЕ НАБОРЫ',
-  content: '<div class="store-categories">\
+curcontent["kit-free"] = {
+  xhead: 'СТАРТОВЫЕ НАБОРЫ',
+  xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-vip\', false);">Випка</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Премка</button>\
@@ -137,9 +73,9 @@ PageCode["kit-free"] = {
   <div class="kit-item__quantity">x1</div></div></div>\
 </div></div></div>'
 };
-PageCode["kit-vip"] = {
-	title: 'ПЛАТНЫЕ НАБОРЫ',
-	content: '<div class="store-categories">\
+curcontent["kit-vip"] = {
+	xhead: 'ПЛАТНЫЕ НАБОРЫ',
+	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-vip\', false);">Випка</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Премка</button>\
@@ -219,9 +155,9 @@ PageCode["kit-vip"] = {
 </div></div></div>'
 };
 
-PageCode["kit-prem"] = {
-	title: 'ПЛАТНЫЕ НАБОРЫ',
-	content: '<div class="store-categories">\
+curcontent["kit-prem"] = {
+	xhead: 'ПЛАТНЫЕ НАБОРЫ',
+	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-vip\', false);">Випка</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Премка</button>\
@@ -300,9 +236,9 @@ PageCode["kit-prem"] = {
 <div class="kit-item__quantity">x1</div></div></div>\
 </div></div></div>'
 };
-PageCode["kit-deluxe"] = {
-	title: 'ПЛАТНЫЕ НАБОРЫ',
-	content: '<div class="store-categories">\
+curcontent["kit-deluxe"] = {
+	xhead: 'ПЛАТНЫЕ НАБОРЫ',
+	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-vip\', false);">Випка</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Премка</button>\
@@ -381,9 +317,9 @@ PageCode["kit-deluxe"] = {
 <div class="kit-item__quantity">x1</div></div></div>\
 </div></div></div>'
 };
-  PageCode["kit-warsfree"] = {
-  title: 'БЕСПЛАТНЫЕ НАБОРЫ',
-  content: '<div class="store-categories">\
+  curcontent["kit-warsfree"] = {
+  xhead: 'БЕСПЛАТНЫЕ НАБОРЫ',
+  xcon: '<div class="store-categories">\
 <button class="btn btn-secondary" onclick="Open(\'kit-autostart\', false);">Автостартовый</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsfree\', false);">Стартовые</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsvip\', false);">Бронзовый</button>\
@@ -443,9 +379,9 @@ PageCode["kit-deluxe"] = {
 </div></div></div>'
 };
 
-PageCode["kit-warsfree"] = {
-	title: 'БЕСПЛАТНЫЕ НАБОРЫ',
-	content: '<div class="store-categories">\
+curcontent["kit-warsfree"] = {
+	xhead: 'БЕСПЛАТНЫЕ НАБОРЫ',
+	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsfree\', false);">Халява</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsvip\', false);">Бронзовый</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsprem\', false);">Серебрянный</button>\
@@ -591,9 +527,9 @@ PageCode["kit-warsfree"] = {
 </div></div></div>'
 };
 
-PageCode["kit-warsvip"] = {
-	title: 'ПЛАТНЫЕ НАБОРЫ',
-	content: '<div class="store-categories">\
+curcontent["kit-warsvip"] = {
+	xhead: 'ПЛАТНЫЕ НАБОРЫ',
+	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsfree\', false);">Халява</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsvip\', false);">Бронзовый</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsprem\', false);">Серебрянный</button>\
@@ -731,9 +667,9 @@ PageCode["kit-warsvip"] = {
 </div></div></div>'
 };
 
-PageCode["kit-warsprem"] = {
-	title: 'ПЛАТНЫЕ НАБОРЫ',
-	content: '<div class="store-categories">\
+curcontent["kit-warsprem"] = {
+	xhead: 'ПЛАТНЫЕ НАБОРЫ',
+	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsfree\', false);">Халява</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsvip\', false);">Бронзовый</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsprem\', false);">Серебрянный</button>\
@@ -871,9 +807,9 @@ PageCode["kit-warsprem"] = {
 </div></div></div>'
 };
 
-PageCode["kit-warselite"] = {
-	title: 'Платные наборы',
-	content: '<div class="store-categories">\
+curcontent["kit-warselite"] = {
+	xhead: 'Платные наборы',
+	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsfree\', false);">Стартовые</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsvip\', false);">Бронзовый</button>\
 	<button class="btn btn-secondary" onclick="Open(\'kit-warsprem\', false);">Серебрянный</button>\
@@ -1015,146 +951,6 @@ PageCode["kit-warselite"] = {
 </div></div></div>'
 };
 
-function Open(Page, usefade = true) {
-  closepage();
-  var div1 = document.createElement("div");
-  div1.style = 'position: relative; z-index: 1050;';
-  div1.id = 'ExtModal';
-  var div2 = document.createElement("div");
-  div2.className = 'modal fade show';
-  if(!usefade) div2.classList.add("show");
-  div2.style = 'display: block;';
-  div2.id = 'quit';
-  var div3 = document.createElement("div");
-  div3.className = "modal-dialog modal-lg";
-  var div4 = document.createElement("div");
-  div4.className = "modal-content";
-  var div5 = document.createElement("div");
-  div5.className = "modal-header";
-  div5.innerHTML = '<h4 class="modal-title">'+PageCode[Page].title+'</h4>';
-  var div6 = document.createElement("div");
-  div6.className = "modal-body";
-  div6.innerHTML = PageCode[Page].content;
-  var div7 = document.createElement("div");
-  div7.className = "modal-footer";
-  div7.innerHTML = '<center><button class="btn btn-danger" id="quit">Закрыть</button><center>';
-  var div8 = document.createElement("div");
-  div8.className = "modal-backdrop fade show";
-	
-  div1.appendChild(div2);
-  div2.appendChild(div3);
-  div3.appendChild(div4);
-  div4.appendChild(div5);
-  div4.appendChild(div6);
-  div4.appendChild(div7);
-  div1.appendChild(div8);
-  if(usefade) setTimeout(()=> div2.classList.add("show"), 0);
-	
-  var body = document.getElementsByTagName('body')[0];
-  body.appendChild(div1);
-  body.className = "modal-open";
-	
-  if(PageCode[Page].func != null) {
-	PageCode[Page].func();
-  }
-}
-
-function closepage() {
-  var Modal = document.getElementById('ExtModal');
-  var Modalparent = null;
-  try {
-    Modalparent = ((Modal.parentElement) ? Modal.parentElement : ((Modal.parentNode) ? Modal.parentNode : null));
-  } catch (error) {
-    return;
-  }
-  if (Modalparent == null) return;
-  Modalparent.removeChild(Modal);
-  document.getElementsByTagName('body')[0].className = "";
-}
-window.onload = function () {
-  document.body.onclick=function(event)
-  {
-    if(event.target.id == 'quit') {closepage();}
-	else if(event.target.id == 'extra-block') {Open("block");}
-	else if(event.target.id == 'extra-help') {Open("help");}
-	else if(event.target.id == 'extra-rules') {Open("rules");}
-	else if(event.target.id == 'extra-kit-free') {Open("kit-free");}
-  }
-  if(window.location.pathname == "/rules") {LoadPageOld('rules');}
-  else if(window.location.pathname == "/help") {LoadPageOld('help');}
-  else if(window.location.pathname == "/block") {LoadPageOld('block');}
-  else if(window.location.pathname == "/kit-free") {LoadPageOld('kit-free');}
-}
-document.onkeydown = function(e) {
-  if(event.keyCode == 123) {
-    return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0) || e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-    return false;
-  }
-  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0) || e.ctrlKey && e.keyCode == 'S'.charCodeAt(0) || e.ctrlKey && e.keyCode == 'D'.charCodeAt(0)){
-    return false;
-  }
-}
-
-function nocopy(event) {
-  var event = event || window.event;
-  if (event.preventDefault) { event.preventDefault(); }
-  else { event.returnValue = false; }
-  return false;
-}
-document.onmouseup = nocopy;
-document.onmousemove = nocopy;
-document.ondragstart = nocopy;
-document.onselectstart = nocopy;
-document.ontextmenu = nocopy;
-document.oncopy = nocopy;
-document.oncontextmenu = nocopy;
-
-curcontent["Oplata"] = {
-	xhead: 'Способы пополнения баланса',
-	xcon: '<div class="xbox oplata_info"><form onsubmit="return qiwiHandler(event)" id="qiwi-inp-form" method="get" target="_blank" action="https://oplata.qiwi.com/create">\
-<div class="qiwi-inp-oplata">\
-	<div class="qiwi-widget-title">Qiwi & Карты<br><p>минимальная комиссия</p></div>\
-	<div class="qiwi-inp-box">\
-			<label for="qiwi-donation-amount" class="qiwi-label">Cумма</label>\
-			<div class="qiwi-rub">₽</div>\
-			<input type="tel" placeholder="Сумма" id="qiwi-donation-amount" name="amount" required="" value="">\
-			<input type="hidden" id="qiwi-donation-comment" name="comment" value="Пожертвование на bloodrust.ru">\
-			<input type="hidden" name="publicKey" value="48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPs3gNggFKzubM8g7ocg4Mkz85xGXXT6YYjWFsEkk7WaPrB4oJgA6Y1qCGp92etzuwgGPM5gGeNoeN3qhTNgnmBGqPNfgvudVGJkS7yu4B4">\
-			<input type="hidden" id="qiwi-donation-account" name="account" value="0">\
-			<input type="hidden" name="customFields[themeCode]" value="Danyl-KSsYnA-Jn5">\
-			<input type="hidden" id="qiwi-successUrl" name="successUrl" value="https://bloodrust.ru">\
-			<div class="qiwi-error-box" id="qiwi-error-box"></div>\
-	</div>\
-	<div class="qiwi-button-box">\
-		<button class="qiwi-submit-main" id="qiwi-submit-main" width="159px" type="submit">Оплатить</button>\
-	</div>\
-</div>\
-</form>\
-<div class="oplata_cont"><a class="container-oplata" id="qiwi-inp-other">\
-	<img alt="" src="https://i.imgur.com/kb8M7vg.png" class="icon-user-oplata"><div class="textContainer-oplata"><span class="name-user">Пополнить картой</span><span class="category-user">Visa и Mastercard</span></div><a class="container-oplata" id="qiwi-inp-other2">\
-	<img alt="" src="https://i.imgur.com/2ud2aUY.png" class="icon-user-oplata"><div class="textContainer-oplata"><span class="name-user">Пополнить через PayPal</span></div><a class="container-oplata" onclick="Open(\'skins\');" target="_blank">\
-	<img alt="" src="https://i.imgur.com/iV8LCN1.png" class="icon-user-oplata"><div class="textContainer-oplata"><span class="name-user">Пополнить скинами</span><span class="category-user">По ценам с торговой площадки</span></div></div>'
-};
-
-
-
-var BlockListArrays = [
-['shotgun.waterpipe', 'pistol.revolver'],
-['flamethrower', 'pistol.python', 'pistol.semiauto', 'shotgun.double'], 
-['shotgun.pump', 'shotgun.spas12', 'pistol.m92', 'rifle.semiauto', 'coffeecan.helmet', 'roadsign.jacket', 'roadsign.kilt', 'pookie.bear'],
-['smg.2', 'smg.thompson', 'smg.mp5', 'rifle.m39', 'metal.facemask', 'metal.plate.torso'], 
-['rifle.bolt', 'multiplegrenadelauncher', 'heavy.plate.helmet', 'heavy.plate.jacket', 'heavy.plate.pants'], 
-['rifle.ak', 'rifle.lr300', 'rifle.l96', 'grenade.f1', 'grenade.beancan', 'explosive.satchel'],
-['lmg.m249', 'ammo.rifle.explosive', 'explosive.timed', 'rocket.launcher', 'ammo.grenadelauncher.he']];
-
-
-curcontent["block"] = {
-	xhead: 'Блокировка предметов после вайпа', 
-	xcon: '<div class="xbox_custom_block"><div class="kit-items">'
-	
-};
 
 
 
@@ -1175,7 +971,7 @@ function Open(el, usefade = true, zind = false) {
 	div4.className = "modal-content";
 	var div5 = document.createElement("div");
 	div5.className = "modal-header";
-	div5.innerHTML = '<h4 class="modal-title">'+curcontent[el].xhead+'</h4>';
+	div5.innerHTML = '<h4 class="modal-xhead">'+curcontent[el].xhead+'</h4>';
 	var div6 = document.createElement("div");
 	div6.className = "modal-body";
 	div6.innerHTML = curcontent[el].xcon;
