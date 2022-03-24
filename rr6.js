@@ -1123,7 +1123,7 @@ PageCode["Oplata"] = {
 			<div class="qiwi-rub">₽</div>\
 			<input type="tel" placeholder="Сумма" id="qiwi-donation-amount" name="amount" required="" value="">\
 			<input type="hidden" id="qiwi-donation-comment" name="comment" value="Пожертвование на rzmx.ru">\
-			<input type="hidden" name="publicKey" value="48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iP5HYJ8rMLYkupp8XJ12tX6jiRK2kxQrS7gFcuiE3r2Qkgsa3AZECteAnMF2wNgRi7e5xkzJeuJ5V9xiSUGeExd7TuGHBtnmf3MAcdSteZF">\
+			<input type="hidden" name="publicKey" value="48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iP5HYJ8rMLYkupp8XJ12tX6jiRK2kxQrS7gFcuiE3r2Qkgsa3AZECtbYHP9HZYzFGfBWsBGGKv3CSYB6tVytWT164HwFyay49KkQp4uTvQR">\
 			<input type="hidden" id="qiwi-donation-account" name="account" value="0">\
 			<input type="hidden" name="customFields[themeCode]" value="Ylia-GAVoSiLhLM">\
 			<input type="hidden" id="qiwi-successUrl" name="successUrl" value="https://rzmx.ru">\
