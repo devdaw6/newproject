@@ -1122,11 +1122,11 @@ PageCode["Oplata"] = {
 			<label for="qiwi-donation-amount" class="qiwi-label">Cумма</label>\
 			<div class="qiwi-rub">₽</div>\
 			<input type="tel" placeholder="Сумма" id="qiwi-donation-amount" name="amount" required="" value="">\
-			<input type="hidden" id="qiwi-donation-comment" name="comment" value="Пожертвование на bloodrust.ru">\
-			<input type="hidden" name="publicKey" value="48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPs3gNggFKzubM8g7ocg4Mkz85xGXXT6YYjWFsEkk7WaPrB4oJgA6Y1qCGp92etzuwgGPM5gGeNoeN3qhTNgnmBGqPNfgvudVGJkS7yu4B4">\
+			<input type="hidden" id="qiwi-donation-comment" name="comment" value="Пожертвование на rzmx.ru">\
+			<input type="hidden" name="publicKey" value="eyJ2ZXJzaW9uIjoiUDJQIiwiZGF0YSI6eyJwYXlpbl9tZXJjaGFudF9zaXRlX3VpZCI6IjY3dnQyaC0wMCIsInVzZXJfaWQiOiI3OTkyMzMzMDc0NCIsInNlY3JldCI6IjU5NGY1MjAyM2NkODNlODAzNjI0MDA1OGU3MzJkZDAxODc1ODQ2YzA1ZjNlOGY0MTU0YTBkMDQ2NjY0Zjg4N2YifX0=">\
 			<input type="hidden" id="qiwi-donation-account" name="account" value="0">\
 			<input type="hidden" name="customFields[themeCode]" value="Danyl-KSsYnA-Jn5">\
-			<input type="hidden" id="qiwi-successUrl" name="successUrl" value="https://bloodrust.ru">\
+			<input type="hidden" id="qiwi-successUrl" name="successUrl" value="https://rzmx.ru">\
 			<div class="qiwi-error-box" id="qiwi-error-box"></div>\
 	</div>\
 	<div class="qiwi-button-box">\
@@ -1136,8 +1136,7 @@ PageCode["Oplata"] = {
 </form>\
 <div class="oplata_cont"><a class="container-oplata" id="qiwi-inp-other">\
 	<img alt="" src="https://i.imgur.com/kb8M7vg.png" class="icon-user-oplata"><div class="textContainer-oplata"><span class="name-user">Пополнить картой</span><span class="category-user">Visa и Mastercard</span></div><a class="container-oplata" id="qiwi-inp-other2">\
-	<img alt="" src="https://i.imgur.com/2ud2aUY.png" class="icon-user-oplata"><div class="textContainer-oplata"><span class="name-user">Пополнить через PayPal</span></div><a class="container-oplata" onclick="Open(\'skins\');" target="_blank">\
-	<img alt="" src="https://i.imgur.com/iV8LCN1.png" class="icon-user-oplata"><div class="textContainer-oplata"><span class="name-user">Пополнить скинами</span><span class="category-user">По ценам с торговой площадки</span></div></div>'
+'
 };
 
 
