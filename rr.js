@@ -41,78 +41,6 @@ curcontent["rules"] = {
 
 //<p style="text-align: center;"><u>При заходе на наши сервера вы автоматически соглашаетесь с правилами.</u></p>\
 
-curcontent["kit-free"] = {
-	xhead: 'Стартовые киты',
-	xcon: '<div class="store-categories">\
-	  <button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
-	  <button class="btn btn-secondary" onclick="Open(\'kit-vip\', false);">Випка</button>\
-	  <button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Премка</button>\
-	  <button class="btn btn-secondary" onclick="Open(\'kit-deluxe\', false);">Элитка</button>\
-	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Стартовый" - <span>Откат 5М</span></div>\
-	<div class="kit_set"><div class="kit-items">\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/BN0uomh.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/OVSvDet.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/TYnBOEV.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/87Q3Jcs.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/zOMIQ9P.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/HTUzGn3.png">\
-	<div class="kit-item__quantity">x100</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/VbFwvmU.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/sSLnv5k.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/lkD7NKF.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	</div></div></div>\
-	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Еда" - <span>Откат 5М</span></div>\
-	<div class="kit_set"><div class="kit-items">\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/jlISs06.png">\
-	<div class="kit-item__quantity">x5</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/LHbWmTf.png">\
-	<div class="kit-item__quantity">x3</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/Dv2swRx.png">\
-	<div class="kit-item__quantity">x4</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/GEIVNcL.png">\
-	<div class="kit-item__quantity">x3</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/feCAU5G.png">\
-	<div class="kit-item__quantity">x3</div></div></div>\
-	</div></div></div>\
-	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Медикаменты" - <span>Откат 5М</span></div>\
-	<div class="kit_set"><div class="kit-items">\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/spbQxSa.png">\
-	<div class="kit-item__quantity">x5</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/dsPh3gA.png">\
-  <div class="kit-item__quantity">x3</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/h6bAR8m.png">\
-  <div class="kit-item__quantity">x10</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/lc4dbE2.png">\
-  <div class="kit-item__quantity">x1</div></div></div>\
-	</div></div></div>\
-	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Дом"</div>\
-	<div class="kit_set"><div class="kit-items">\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/Ofq5bfe.png">\
-	<div class="kit-item__quantity">x3000</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/gcuGgxz.png">\
-	<div class="kit-item__quantity">x5000</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/hlLXdJ0.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/POksAHx.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/wxU71W4.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/y69mz7D.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/yOf1vPQ.png">\
-	<div class="kit-item__quantity">x1</div></div></div>\
-  </div></div></div>'
-  };
-
-
 curcontent["kit-kaban"] = {
 	xhead: 'Платные киты',
 	xcon: '<div class="store-categories">\
@@ -530,71 +458,73 @@ curcontent["kit-smert"] = {
 curcontent["kit-free"] = {
 	xhead: 'Стартовые киты',
 	xcon: '<div class="store-categories">\
-	<button class="btn btn-secondary active">Стартовые</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-kaban\', false);">Кабанчик</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-joker\', false);">Джокер</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-masnik\', false);">Мясник</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-smert\', false);">Смэрть</button>\
-<div class="xbox_custom_kits" >\
-<div class="serverheader">Кит "Стартовый" - <span>Откат 15м</span></div>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/stone.pickaxe.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/stonehatchet.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/knife.butcher.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://xackuscr.ru/rust/heart.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/bow.hunting.png">\
-<div class="kit-item__quantity">25%</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/pistol.nailgun.png">\
-<div class="kit-item__quantity">25%</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/pistol.eoka.png">\
-<div class="kit-item__quantity">25%</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/hatchet.png">\
-<div class="kit-item__quantity">25%</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/pickaxe.png">\
-<div class="kit-item__quantity">25%</div></div></div>\
-</div></div>\
-<div class="xbox_custom_kits" >\
-<div class="serverheader">Кит "Дом" - <span>Откат 1ч</span></div>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/box.wooden.large.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/sleepingbag.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/door.hinged.wood.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/lock.code.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/building.planner.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/hammer.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/furnace.png">\
-<div class="kit-item__quantity">25%</div></div></div>\
-</div></div>\
-<div class="serverheader">Кит за "#bloodrust" в нике - <span>Откат 48ч</span></div>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/deer.skull.mask.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/bone.armor.suit.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/candycaneclub.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/workbench1.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/furnace.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/jackhammer.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/axe.salvaged.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/pistol.nailgun.png">\
-<div class="kit-item__quantity">x1</div></div></div>\
-</div></div></div>'
-};
+	  <button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
+	  <button class="btn btn-secondary" onclick="Open(\'kit-vip\', false);">Випка</button>\
+	  <button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Премка</button>\
+	  <button class="btn btn-secondary" onclick="Open(\'kit-deluxe\', false);">Элитка</button>\
+	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Стартовый" - <span>Откат 5М</span></div>\
+	<div class="kit_set"><div class="kit-items">\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/BN0uomh.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/OVSvDet.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/TYnBOEV.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/87Q3Jcs.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/zOMIQ9P.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/HTUzGn3.png">\
+	<div class="kit-item__quantity">x100</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/VbFwvmU.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/sSLnv5k.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/lkD7NKF.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	</div></div></div>\
+	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Еда" - <span>Откат 5М</span></div>\
+	<div class="kit_set"><div class="kit-items">\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/jlISs06.png">\
+	<div class="kit-item__quantity">x5</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/LHbWmTf.png">\
+	<div class="kit-item__quantity">x3</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/Dv2swRx.png">\
+	<div class="kit-item__quantity">x4</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/GEIVNcL.png">\
+	<div class="kit-item__quantity">x3</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/feCAU5G.png">\
+	<div class="kit-item__quantity">x3</div></div></div>\
+	</div></div></div>\
+	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Медикаменты" - <span>Откат 5М</span></div>\
+	<div class="kit_set"><div class="kit-items">\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/spbQxSa.png">\
+	<div class="kit-item__quantity">x5</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/dsPh3gA.png">\
+  <div class="kit-item__quantity">x3</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/h6bAR8m.png">\
+  <div class="kit-item__quantity">x10</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/lc4dbE2.png">\
+  <div class="kit-item__quantity">x1</div></div></div>\
+	</div></div></div>\
+	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Дом"</div>\
+	<div class="kit_set"><div class="kit-items">\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/Ofq5bfe.png">\
+	<div class="kit-item__quantity">x3000</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/gcuGgxz.png">\
+	<div class="kit-item__quantity">x5000</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/hlLXdJ0.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/POksAHx.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/wxU71W4.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/y69mz7D.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/yOf1vPQ.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+  </div></div></div>'
+  };
 
 
 curcontent["Oplata"] = {
@@ -620,8 +550,7 @@ curcontent["Oplata"] = {
 </form>\
 <div class="oplata_cont"><a class="container-oplata" id="qiwi-inp-other">\
 	<img alt="" src="https://i.imgur.com/kb8M7vg.png" class="icon-user-oplata"><div class="textContainer-oplata"><span class="name-user">Пополнить картой</span><span class="category-user">Visa и Mastercard</span></div><a class="container-oplata" id="qiwi-inp-other2">\
-	<img alt="" src="https://i.imgur.com/2ud2aUY.png" class="icon-user-oplata"><div class="textContainer-oplata"><span class="name-user">Пополнить через PayPal</span></div><a class="container-oplata" onclick="Open(\'skins\');" target="_blank">\
-	<img alt="" src="https://i.imgur.com/iV8LCN1.png" class="icon-user-oplata"><div class="textContainer-oplata"><span class="name-user">Пополнить скинами</span><span class="category-user">По ценам с торговой площадки</span></div></div>'
+'
 };
 
 
