@@ -41,25 +41,76 @@ curcontent["rules"] = {
 
 //<p style="text-align: center;"><u>При заходе на наши сервера вы автоматически соглашаетесь с правилами.</u></p>\
 
-curcontent["skins"] = {
-	xhead: 'Пополнение скинами напрямую',
-	xcon: '<div class="x-spoiler">\
-<input class="spoil-button" type="checkbox" tabindex="-1">\
-     <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Что значит пополнение напрямую?</span><br><blockquote class="spoil-Untext">Обычно пополнение скинами происходит через сторонние сервисы (SkinPay или Skins.Cash), но в этом случае игрок который пополняет баланс теряет около ~50% от цены скинов. Мы же хотим предложить вам пополнение баланса скинами практически по ценам с торговой площадки, без каких-либо посредников.</span></blockquote>\
-     </div></div>\
-<div class="x-spoiler">\
-<input class="spoil-button" type="checkbox" tabindex="-1">\
-     <div class="spoil-box">\
-         <span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Ограничения при пополнении напрямую</span>\
-         <blockquote class="spoil-Untext">\» У вас <b>не должно</b> быть задержки <b>15 дней</b> на обмены<br>» Принимаются скины только из <b>RUST</b> и <b>CS:GO</b><br>» Если скинов в обмене много - лучше отправлять частями<br>» Баланс будет пополнено только того аккаунта с которого были отправлены скины</li></ol>\
-         </blockquote>\
-     </div></div>\
-<div class="x-spoiler">\
-<input class="spoil-button" type="checkbox" tabindex="-1">\
-     <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Хочу пополнить баланс скинами</span><br>\
-	 <blockquote class="spoil-Untext">Чтобы пополнить баланс необходимо перейти на страницу обмена (нажав на кнопку снизу), выбрать скины которыми хотите пополнить, нажать кнопку "Предложить обмен" и подтвердить обмен через мобильное приложение Steam.<div class="btn-skins"><a class="btn-skin" href="https://steamcommunity.com/tradeoffer/new/?partner=97747149&token=6cxG98Sh" target="_blank">Начать обмен</a></blockquote>\
-     </div></div><div class="row-skins"><a class="container-user" href="https://vk.com/im?sel=-113458740" target="_blank"><img alt="" src="https://i.imgur.com/dVKXJeW.png" class="icon-user"><div class="textContainer-user"><span class="name-user">Группа ВК</span><span class="category-user">Для связи</span></div></a><a class="container-user1" href="https://discord.gg/bloodrust" target="_blank"><img alt="" src="https://i.imgur.com/PYUeZt9.png" class="icon-user1"><div class="textContainer-user1"><span class="name-user1">Дискорд сервер</span><span class="category-user1">Для связи</span></div></a>'
-};
+curcontent["kit-free"] = {
+	xhead: 'Стартовые киты',
+	xcon: '<div class="store-categories">\
+	  <button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
+	  <button class="btn btn-secondary" onclick="Open(\'kit-vip\', false);">Випка</button>\
+	  <button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Премка</button>\
+	  <button class="btn btn-secondary" onclick="Open(\'kit-deluxe\', false);">Элитка</button>\
+	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Стартовый" - <span>Откат 5М</span></div>\
+	<div class="kit_set"><div class="kit-items">\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/BN0uomh.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/OVSvDet.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/TYnBOEV.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/87Q3Jcs.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/zOMIQ9P.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/HTUzGn3.png">\
+	<div class="kit-item__quantity">x100</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/VbFwvmU.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/sSLnv5k.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/lkD7NKF.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	</div></div></div>\
+	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Еда" - <span>Откат 5М</span></div>\
+	<div class="kit_set"><div class="kit-items">\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/jlISs06.png">\
+	<div class="kit-item__quantity">x5</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/LHbWmTf.png">\
+	<div class="kit-item__quantity">x3</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/Dv2swRx.png">\
+	<div class="kit-item__quantity">x4</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/GEIVNcL.png">\
+	<div class="kit-item__quantity">x3</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/feCAU5G.png">\
+	<div class="kit-item__quantity">x3</div></div></div>\
+	</div></div></div>\
+	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Медикаменты" - <span>Откат 5М</span></div>\
+	<div class="kit_set"><div class="kit-items">\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/spbQxSa.png">\
+	<div class="kit-item__quantity">x5</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/dsPh3gA.png">\
+  <div class="kit-item__quantity">x3</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/h6bAR8m.png">\
+  <div class="kit-item__quantity">x10</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/lc4dbE2.png">\
+  <div class="kit-item__quantity">x1</div></div></div>\
+	</div></div></div>\
+	<div class="xbox_custom_kits" ><div class="serverheader">Набор "Дом"</div>\
+	<div class="kit_set"><div class="kit-items">\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/Ofq5bfe.png">\
+	<div class="kit-item__quantity">x3000</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/gcuGgxz.png">\
+	<div class="kit-item__quantity">x5000</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/hlLXdJ0.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/POksAHx.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/wxU71W4.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/y69mz7D.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+	<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://i.imgur.com/yOf1vPQ.png">\
+	<div class="kit-item__quantity">x1</div></div></div>\
+  </div></div></div>'
+  };
 
 
 curcontent["kit-kaban"] = {
