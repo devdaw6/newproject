@@ -1,6 +1,6 @@
 var curcontent = new Array();
 
-curcontent[""] = {
+curcontent["rules"] = {
 	xhead: 'Правила',
 	xcon: '<div class="xbox_custom_rules"><ul><p class="MsoNormal"><span>Информация</span></p>\
 <p><li>Не знание правил не освобождает Вас от ответственности.</li></p>\
@@ -62,7 +62,7 @@ curcontent["skins"] = {
 };
 
 
-curcontent[""] = {
+curcontent["kit-kaban"] = {
 	xhead: 'Платные киты',
 	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
@@ -151,7 +151,7 @@ curcontent[""] = {
 </div></div></div>'
 };
 
-curcontent[""] = {
+curcontent["kit-joker"] = {
 	xhead: 'Платные киты',
 	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
@@ -256,7 +256,7 @@ curcontent[""] = {
 };
 
 
-curcontent[""] = {
+curcontent["kit-masnik"] = {
 	xhead: 'Платные киты',
 	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
@@ -365,7 +365,7 @@ curcontent[""] = {
 };
 
 
-curcontent[""] = {
+curcontent["kit-smert"] = {
 	xhead: 'Платные киты',
 	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Стартовые</button>\
@@ -476,7 +476,7 @@ curcontent[""] = {
 };
 
 
-curcontent[""] = {
+curcontent["kit-free"] = {
 	xhead: 'Стартовые киты',
 	xcon: '<div class="store-categories">\
 	<button class="btn btn-secondary active">Стартовые</button>\
