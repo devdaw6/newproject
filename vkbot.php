@@ -10,9 +10,9 @@
 // --- НАСТРОЙКИ ------------
 //VK
 // Токен
-$access_token = 'token';
+$access_token = '4343b2c8c04d775b6b3266011e6fe0e6aed5485f435bedf825d7d3556c5624b3a5a4147e95176e4e35ec5';
 // ID группы
-$group_id = 'groupid';
+$group_id = '194791207';
 
 // Настройки обложки
 // Путь к файлу обложки
